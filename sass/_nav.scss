@@ -1,0 +1,135 @@
+%absolute {
+    position: absolute;
+    border: none;
+    height: 3.5rem;
+    cursor: pointer;
+}
+
+
+.nav {
+    background-color: $color-dark;
+    // height: 5rem;
+    padding: 0 4vw;
+
+    color: #fff;
+
+    &__top {
+        height: 4.5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        & img {
+
+            margin-top: 1rem;
+            // border: 1px solid rgb(255, 0, 0);
+            // align-self: center;
+
+        }
+
+        &--search {
+            margin-top: 1rem;
+            position: relative;
+            width: 60%;
+
+            & select {
+                @extend %absolute;
+                left: 0;
+                background: #e3e3e3;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+
+                &:hover {
+                    background: lighten(#e3e3e3, 5%);
+                }
+
+            }
+
+            & input {
+                width: 100%;
+                height: 3.5rem;
+                border: none;
+                border-radius: 5px;
+            }
+
+            & button {
+                @extend %absolute;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                background: #febd69;
+                right: 0;
+                width: 4.5rem;
+
+                & svg {
+                    fill: $color-dark;
+                    width: 100%;
+                    height: 100%;
+                    padding: .2rem;
+                }
+
+                &:hover {
+                    background: darken(#febd69, 8%);
+                }
+
+            }
+
+        }
+    }
+
+    &__bot {
+        height: 4.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        & div {
+            display: flex;
+            justify-content: space-between;
+
+        }
+        & a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a[class*="aBtn"] {
+            display: inline;
+            font-size: 1.2rem;
+            display: flex;
+            line-height: 1.4rem;
+            flex-direction: column;
+            color: #ddd;
+            position: relative;
+
+            & span:last-child {
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: #fff;
+            }
+        }
+
+        .iBtn {
+            // height: 3.5rem;
+
+            & svg {
+                width: 3rem;
+                height: 2.5rem;
+                fill: #fff;
+                display: inline;
+                position: absolute;
+            }
+            & span {
+                margin-left: 3rem;
+            }
+        }
+       
+        .cartBtn {
+            // border: 1px solid #00f;
+            & svg {
+                width: 3rem;
+                height: 100%;
+            }
+        }
+
+    }
+}

@@ -2,6 +2,9 @@
 $color-primary: #ff005e;
 $color-primary-dark: #f30039;
 
+$color-dark: #232f3e;
+$color-white: #eef;
+
 $color-secondary: #D400B3;
 $color-terciary: #FF5600;
 
@@ -42,11 +45,6 @@ html {
     font-size: 62.5%;
     width: 100vw;
     overflow-x: hidden;
-
-    //8px size 
-    @media only screen and (max-width: $bp-1200) {
-        font-size: 50%;
-    }
 }
 
 body {
@@ -55,7 +53,7 @@ body {
     font-weight: 300;
     line-height: 1.6;
 
-    // font-size: 1.6;
+    font-size: 1.6rem;
 
 
 }

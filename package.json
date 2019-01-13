@@ -2,16 +2,11 @@
   "name": "maple",
   "version": "1.0.0",
   "description": "A CRUD e-commerce application in Node.js",
-  "main": "server.js",
+  "main": "src/server.js",
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "dev:sass": "node-sass sass/main.scss /public/css/style.css -w",
-
-    "compile:sass": "node-sass sass/main.scss /public/css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' /public/css/style.comp.css -o public/css/style.prefix.css",
-    "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "dev:sass": "node-sass sass/main.scss public/css/style.css -w"
   },
   "author": "Digital Villa",
   "license": "MIT",

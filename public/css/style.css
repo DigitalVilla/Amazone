@@ -1,0 +1,223 @@
+*,
+::after,
+::before {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  width: 100vw;
+  overflow-x: hidden; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #634b6d;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.6rem; }
+
+::selection {
+  background: #ebebeb;
+  /* WebKit/Blink Browsers */
+  color: #ff005e; }
+
+::-moz-selection {
+  background: #ebebeb;
+  /* Gecko Browsers */
+  color: #ff005e; }
+
+button:focus,
+button:active {
+  outline: none !important;
+  outline: 0 !important; }
+
+button::-moz-focus-inner {
+  border: 0; }
+
+input::placeholder {
+  color: #b6249e;
+  opacity: .5; }
+
+input::-moz-focus-inner {
+  border: 0;
+  border: none; }
+
+/* Larger than mobile */
+.heading-1, .heading-2, .heading-3, .heading-4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; }
+
+.heading-1 {
+  font-size: 4.5rem;
+  color: #f9f7f6;
+  line-height: 1; }
+
+.heading-2 {
+  font-size: 4rem;
+  font-size: italic;
+  line-height: 1.4; }
+
+.heading-3 {
+  font-size: 2rem;
+  color: #ff005e;
+  text-transform: uppercase; }
+
+.heading-4 {
+  font-size: 1.9rem; }
+
+.light {
+  color: #f9f7f6; }
+
+.dark {
+  color: #4f3a54; }
+
+.primary {
+  color: #ff005e !important; }
+
+.btn {
+  background-color: #ff005e;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  padding: 1.8rem 4rem;
+  cursor: pointer;
+  transition: all .2s;
+  text-decoration: none; }
+  .btn:hover {
+    background-color: #f30039; }
+  .btn:active {
+    background-color: #D400B3; }
+
+.mb-sm {
+  margin-bottom: 2rem; }
+
+.mb-md {
+  margin-bottom: 3rem; }
+
+.mb-lg {
+  margin-bottom: 4rem; }
+
+.mb-xl {
+  margin-bottom: 6rem; }
+
+div.outStock::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  position: absolute;
+  background-image: url(../img/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+button.outStock:hover {
+  background-color: #634b6d; }
+
+button.outStock {
+  background-color: #634b6d; }
+
+input.outStock {
+  visibility: hidden; }
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */ }
+
+.nav__top--search select, .nav__top--search button {
+  position: absolute;
+  border: none;
+  height: 3.5rem;
+  cursor: pointer; }
+
+.nav {
+  background-color: #232f3e;
+  padding: 0 4vw;
+  color: #fff; }
+  .nav__top {
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .nav__top img {
+      margin-top: 1rem; }
+    .nav__top--search {
+      margin-top: 1rem;
+      position: relative;
+      width: 60%; }
+      .nav__top--search select {
+        left: 0;
+        background: #e3e3e3;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px; }
+        .nav__top--search select:hover {
+          background: #f0f0f0; }
+      .nav__top--search input {
+        width: 100%;
+        height: 3.5rem;
+        border: none;
+        border-radius: 5px; }
+      .nav__top--search button {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background: #febd69;
+        right: 0;
+        width: 4.5rem; }
+        .nav__top--search button svg {
+          fill: #232f3e;
+          width: 100%;
+          height: 100%;
+          padding: .2rem; }
+        .nav__top--search button:hover {
+          background: #feab40; }
+  .nav__bot {
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .nav__bot div {
+      display: flex;
+      justify-content: space-between; }
+    .nav__bot a {
+      color: #fff;
+      text-decoration: none; }
+    .nav__bot a[class*="aBtn"] {
+      display: inline;
+      font-size: 1.2rem;
+      display: flex;
+      line-height: 1.4rem;
+      flex-direction: column;
+      color: #ddd;
+      position: relative; }
+      .nav__bot a[class*="aBtn"] span:last-child {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #fff; }
+    .nav__bot .iBtn svg {
+      width: 3rem;
+      height: 2.5rem;
+      fill: #fff;
+      display: inline;
+      position: absolute; }
+    .nav__bot .iBtn span {
+      margin-left: 3rem; }
+    .nav__bot .cartBtn svg {
+      width: 3rem;
+      height: 100%; }
