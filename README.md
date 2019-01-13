@@ -7,7 +7,7 @@
 * ES6
 * SASS
 
-And a good eye to clone the UI design.  
+And a good eye to clone the UI design from scratch!  
 
 ![](screenshot.png)
 
